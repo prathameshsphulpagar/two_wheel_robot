@@ -1,0 +1,26 @@
+<launch>
+
+<!-- ==================================== other codes ================================ -->
+
+<node name="combine_six_lidar_node" pkg="two_wheel_robot" type="combine_six_lidar_executable"  output="screen"/> 
+
+<node name="teleop_twist_keyboard_node" pkg="two_wheel_robot" type="teleop_keyboard_executable"  output="screen"/>
+
+<node name="sensing_stoping_node" pkg="two_wheel_robot" type="sensing_stoping_executable"  output="screen"/>
+<!-- -->
+ <node name="node_restart_node" pkg="two_wheel_robot" type="node_restart_executable"  output="screen"/> 
+
+<!-- ==================================== Lidar Client ============================== -->
+
+<node name="rplidar_client_front_mid_node" pkg="two_wheel_robot" type="lidar_client_front_mid_executable"  output="screen"/>
+
+<node name="rplidar_client_front_top_node" pkg="two_wheel_robot" type="lidar_client_front_top_executable"  output="screen"/>
+
+
+<!-- ==================================== Lidar node ================================= -->
+<!-- 
+<include file="$(find rplidar_ros_front_top)/launch/rplidar_front_top_launch.launch"/>
+<include file="$(find rplidar_ros_front_mid)/launch/rplidar_front_mid_launch.launch"/>
+-->
+
+</launch>

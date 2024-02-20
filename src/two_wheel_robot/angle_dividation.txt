@@ -1,0 +1,30 @@
+000 = go forward green
+
+001 = slight go left
+
+010 = stop front go left or right 
+
+011 = sharp go left
+
+100 = slight go right
+
+101 = carefully go
+
+110 = sharp go right
+
+111 = stop
+
+
+q Q robot complete stop ascii = 113
+
+e  E desable senind stoping
+
+r  R enable senind stoping
+
+b B brush on  = 98
+
+h H brush should off = 104
+
+
+
+
